@@ -23,7 +23,7 @@ func (vanillaBinarySearch) BinarySearch(arr []int, target int) int {
 	right := len(arr) - 1
 
 	for left <= right {
-		mid := left + (right-left)/2
+		mid := (left + right) / 2
 		if arr[mid] == target {
 			return mid
 		}

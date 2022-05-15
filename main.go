@@ -7,11 +7,11 @@ import (
 
 func main() {
 
-	arr := make([]int, 3)
-	arr = []int{1, 3, 6, 8, 9, 10}
+	arr := make([]bool, 6)
+	arr = []bool{false, false, false, true, true, true}
 
-	bs := binarysearch.NewVanillaBinarySearch()
-	idx := bs.BinarySearch(arr, 8)
+	bs := binarysearch.NewFindingTheBoundary()
+	idx := bs.FindBoundary(arr)
 
 	fmt.Println("idx=", idx)
 }
